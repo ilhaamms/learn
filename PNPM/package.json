@@ -2,10 +2,10 @@
   "name": "PNPM",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "statement3.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon statement3.js"
   },
   "keywords": [],
   "author": "",
