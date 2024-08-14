@@ -12,6 +12,8 @@ console.log('Hello, world hahawak!');
     tipe data di javascript ada
     1. Dalam JavaScript, ada 6 tipe data primitif: string, number, boolean, null, undefined, symbol
     variabel bisa const(konstan), var, dan let
+
+    Perlu diperhatikan bahwa variable const memang tidak bisa di assign ulang, tetapi value dan property dalam suatu array dan object bisa diubah
 */
 
 var number1 = 10
@@ -34,3 +36,18 @@ console.log(typeof "1")
 console.log(typeof true)
 console.log(typeof null)
 console.log(typeof tester)
+
+let globalVar = "This is a global variable";
+
+function fun() {
+    let localVar = "This is a local variable";
+
+    console.log(globalVar);
+    console.log(localVar);
+}
+fun();
+
+// string interpolation hanya bisa dengan backtick saja
+let user = "Ilham Muhammad Sidiq"
+
+console.log(`Welcome ${user}`)
