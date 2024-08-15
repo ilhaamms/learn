@@ -1,3 +1,2 @@
-/PNPM/pnpm-lock.yaml
-/NPM/node_modules/
-/PNPM/node_modules/
+*pnpm-lock.yaml
+*node_modules

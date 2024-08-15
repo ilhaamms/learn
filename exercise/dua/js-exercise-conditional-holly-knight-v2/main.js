@@ -4,7 +4,7 @@ function hollyKnight(name, stamina, undead) {
   } else if (stamina === undead) {
     return `Beruntung Holly knight ${name} berhasil mengalahkan ${undead} undead!`
   } else {
-    return `Holly knight ${name} mengalahkan ${undead} YANG BERHASIL DIKALAHKAN undead, namun sayang holly knight ${name} gugur di medan perang!`
+    return `Holly knight ${name} mengalahkan ${stamina} undead, namun sayang holly knight ${name} gugur di medan perang!`
   }
 }
 

@@ -5,21 +5,21 @@ function rockPaperScissor(player1, player2) {
     return `Draw!`
   }
 
-  if (player1 === "paper" || player2 === "paper" && player1 === "rock" || player2 === "rock") {
+  if ((player1 === "paper" || player2 === "paper") && (player1 === "rock" || player2 === "rock")) {
     if (player1 === "paper") {
-      return `Player 1 Won!`
+      return `Player 1 Won!jo`
     } else {
       return `Player 2 Won!`
     }
-  } else if (player1 === "rock" || player2 === "rock" && player1 === "scissor" || player2 === "scissor") {
+  } else if ((player1 === "rock" || player2 === "rock") && (player1 === "scissor" || player2 === "scissor")) {
     if (player1 === "rock") {
-      return `Player 1 Won!`
+      return `Player 1 Won!ha`
     } else {
       return `Player 2 Won!`
     }
-  } else if (player1 === "scissor" || player2 === "scissor" && player1 === "paper" || player2 === "paper") {
+  } else if ((player1 === "scissor" || player2 === "scissor") && (player1 === "paper" || player2 === "paper")) {
     if (player1 === "scissor") {
-      return `Player 1 Won!`
+      return `Player 1 Won!1`
     } else {
       return `Player 2 Won!`
     }
