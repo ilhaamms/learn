@@ -1,5 +1,41 @@
 function mineralMining(mineral, miningPower, duration, cost) {
-  return null // TODO: replace this
+
+  let timeToGet = 0;
+  let marketPrice = 0;
+  if (mineral === "gold") {
+    timeToGet = 30;
+    marketPrice = 1;
+  } else if (mineral === "silver") {
+    timeToGet = 20;
+    marketPrice = 0.6;
+  } else if (mineral === "coper") {
+    timeToGet = 5;
+    marketPrice = 0.3;
+  } else if (mineral === "uranium") {
+    timeToGet = 75;
+    marketPrice = 3;
+  } else if (mineral === "platinum") {
+    timeToGet = 15;
+    marketPrice = 2;
+  } else if (mineral === "titanium") {
+    timeToGet = 55;
+    marketPrice = 1.5;
+  } else {
+    return `Invalid mineral name`
+  }
+
+  let income = (duration / timeToGet) * miningPower
+  let totalIncomeTambang = income * marketPrice
+
+  if (cost === totalIncomeTambang) {
+    return `Mineral mining get nothing`
+  }
+
+  if (cost > totalIncomeTambang) {
+    return `Mineral mining at a loss ${totalIncomeTambang - cost}`
+  } else if (cost < totalIncomeTambang) {
+    return `Mineral mining profit ${totalIncomeTambang - cost}`
+  }
 }
 
 console.log(mineralMining('gold', 10, 70, 59)); // Mineral mining at a loss -35.666666666666664
