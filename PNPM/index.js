@@ -1,5 +1,6 @@
 console.log('Hello, world hahawak!');
 // JANGAN LUPA TAMBAHKAN SEMICOLON
+// kalau debug block sama localnya harus kebuka
 
 // devDependencies dengan nodemon -> pnpm install --save-dev nodemon(nama package)
 // supaya ketika ubah file, tidak perlu restart server
