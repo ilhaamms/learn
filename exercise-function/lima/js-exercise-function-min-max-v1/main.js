@@ -1,13 +1,11 @@
 // TODO: answer here
 let minMax = str => {
-    if (str.length === 1) {
-        return `Nilai terkecil dan terbesar adalah ${str}`;
-    }
 
-    let min = 0;
+    let min = Number(str[0]);
     let max = 0;
+
     for (let i = 0; i <= str.length; i++) {
-        let number = Number(str);
+        let number = Number(str[i]);
 
         if (number > max) {
             max = number;
@@ -18,7 +16,14 @@ let minMax = str => {
         }
     }
 
+    if (min === max) {
+        return `Nilai terkecil dan terbesar adalah ${str}`;
+    }
+
     return `Nilai terkecil adalah ${min}, dan terbesar adalah ${max}`;
 }
+
+console.log(minMax("9"));
+// console.log(minMax("9746532"));
 
 module.exports = minMax;
